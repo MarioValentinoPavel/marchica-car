@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marchica Car · Location de voitures premium à Nador</title>
+<meta name="description" content="Marchica Car, location de voitures à Nador et dans 15 points du Maroc : citadines, SUV et prestige (Porsche, Range Rover, Classe G). Livraison à l'aéroport, 24 h/24. +212 661 38 16 39.">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b0c0e'/%3E%3Cpath d='M14 44V20l18 14 18-14v24' fill='none' stroke='%23e0262f' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <span class="intro__hazard intro__hazard--l"></span>
+  <span class="intro__hazard intro__hazard--r"></span>
+  <span class="intro__beam intro__beam--l"></span>
+  <span class="intro__beam intro__beam--r"></span>
+  <button class="fob" id="fob" type="button" tabindex="-1">
+    <span class="fob__logo">MC</span>
+    <span class="fob__btn fob__btn--open"><i class="ph ph-lock-simple-open"></i></span>
+    <span class="fob__btn"><i class="ph ph-lock-simple"></i></span>
+    <span class="fob__led"></span>
+  </button>
+  <p class="intro__hint" data-i18n="intro.hint">Appuyez pour déverrouiller</p>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Marchica Car, accueil"><span class="brand__a">MARCHICA</span><span class="brand__b">CAR</span></a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#flotte" data-i18n="nav.fleet">La flotte</a>
+    <a href="#reserver" data-i18n="nav.book">Réserver</a>
+    <a href="#agence" data-i18n="nav.agency">L'agence</a>
+    <a href="#avis" data-i18n="nav.reviews">Avis</a>
+  </nav>
+  <div class="nav__end">
+    <div class="lang" role="group" aria-label="Langue">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="nl" aria-pressed="false">NL</button>
+    </div>
+    <a class="btn btn--red btn--sm" href="#reserver" data-i18n="cta.book">Réserver</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__media">
+      <img class="hero__img" src="assets/img/mercedes-g-class.jpg" alt="Mercedes Classe G noir mat devant l'agence Marchica Car à Nador" width="1166" height="1021">
+      <span class="hero__sweep" aria-hidden="true"></span>
+    </div>
+    <div class="hero__copy">
+      <h1 class="hero__title">
+        <span class="ln"><span data-i18n="hero.l1">Votre voiture</span></span>
+        <span class="ln"><span data-i18n="hero.l2">vous attend</span></span>
+        <span class="ln"><span data-i18n="hero.l3">à l'aéroport.</span></span>
+      </h1>
+      <p class="hero__sub" data-i18n="hero.sub">Location à Nador et dans 15 points du Maroc. Citadines, SUV et prestige, 24 h/24.</p>
+      <div class="hero__cta">
+        <a class="btn btn--red" href="#reserver" data-i18n="cta.book">Réserver</a>
+        <a class="btn btn--line" href="#flotte" data-i18n="cta.fleet">Voir la flotte</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="brands" aria-label="Marques de la flotte">
+    <div class="brands__track">
+      <span>Porsche</span><span>Mercedes-Benz</span><span>Range Rover</span><span>Audi</span><span>Cupra</span><span>Volkswagen</span><span>Hyundai</span><span>Renault</span><span>Seat</span>
+      <span aria-hidden="true">Porsche</span><span aria-hidden="true">Mercedes-Benz</span><span aria-hidden="true">Range Rover</span><span aria-hidden="true">Audi</span><span aria-hidden="true">Cupra</span><span aria-hidden="true">Volkswagen</span><span aria-hidden="true">Hyundai</span><span aria-hidden="true">Renault</span><span aria-hidden="true">Seat</span>
+    </div>
+  </div>
+
+  <section class="fleet" id="flotte">
+    <div class="fleet__head">
+      <h2 class="h2 reveal" data-i18n="fleet.title">La flotte</h2>
+      <p class="lead reveal" data-i18n="fleet.lead">De la citadine au Classe G. Chaque voiture est photographiée devant notre agence, telle que vous la recevrez.</p>
+    </div>
+    <div class="fleet__bar">
+      <div class="tabs" role="tablist" aria-label="Gamme">
+        <button role="tab" aria-selected="true" data-cat="all" data-i18n="cat.all">Toutes</button>
+        <button role="tab" aria-selected="false" data-cat="city" data-i18n="cat.city">Citadines</button>
+        <button role="tab" aria-selected="false" data-cat="suv" data-i18n="cat.suv">SUV</button>
+        <button role="tab" aria-selected="false" data-cat="premium" data-i18n="cat.premium">Premium</button>
+        <button role="tab" aria-selected="false" data-cat="prestige" data-i18n="cat.prestige">Prestige</button>
+      </div>
+      <button class="sort" id="sort" type="button" aria-pressed="false"><i class="ph ph-sort-ascending"></i><span data-i18n="fleet.sort">Prix croissant</span></button>
+    </div>
+    <ul class="grid" id="grid"></ul>
+  </section>
+
+  <section class="book" id="reserver">
+    <div class="book__map">
+      <svg class="map" id="map" viewBox="0 0 755 680" role="img" aria-label="Points de livraison au Maroc">
+        <path class="map__glow" id="coastGlow"/>
+        <path class="map__coast" id="coast"/>
+        <text class="map__sea" id="sea1" x="540" y="28" text-anchor="middle"></text>
+        <text class="map__sea" id="sea2" x="120" y="250" text-anchor="middle" transform="rotate(-56 120 250)"></text>
+        <path class="map__route" id="route"/>
+        <g id="cities"></g>
+      </svg>
+      <p class="map__cap" data-i18n="map.cap">Touchez une ville pour la choisir comme point de retrait.</p>
+    </div>
+    <form class="book__form" id="bookForm" novalidate>
+      <h2 class="h2" data-i18n="book.title">Réserver</h2>
+      <p class="lead" data-i18n="book.lead">Choisissez le lieu, les dates et la voiture. On vous confirme tout sur WhatsApp.</p>
+      <div class="field">
+        <label for="pickup" data-i18n="book.pickup">Retrait</label>
+        <select id="pickup"></select>
+      </div>
+      <div class="field">
+        <label for="dropoff" data-i18n="book.dropoff">Retour</label>
+        <select id="dropoff"></select>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="d1" data-i18n="book.from">Départ</label>
+          <input type="date" id="d1">
+        </div>
+        <div class="field">
+          <label for="d2" data-i18n="book.to">Retour</label>
+          <input type="date" id="d2">
+        </div>
+      </div>
+      <div class="field">
+        <label for="carSel" data-i18n="book.car">Voiture</label>
+        <select id="carSel"></select>
+      </div>
+      <output class="sum" id="sum" aria-live="polite"></output>
+      <p class="err" id="err" role="alert"></p>
+      <a class="btn btn--red btn--wide" id="wa" href="https://wa.me/212661381639" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i><span data-i18n="book.wa">Réserver sur WhatsApp</span></a>
+      <p class="fine" data-i18n="book.fine">Estimation selon le tarif journalier. Au-delà de 7 jours, nous préparons une offre longue durée.</p>
+    </form>
+  </section>
+
+  <section class="road" aria-labelledby="roadTitle">
+    <h2 class="h2 reveal" id="roadTitle" data-i18n="road.title">Trois gestes, pas de paperasse.</h2>
+    <div class="road__track" id="roadTrack">
+      <span class="road__line"></span>
+      <span class="road__car" id="roadCar"><i class="ph ph-car-profile"></i></span>
+      <div class="road__stop">
+        <h3 data-i18n="road.s1">Choisir</h3>
+        <p data-i18n="road.t1">Trouvez la voiture idéale en quelques clics.</p>
+      </div>
+      <div class="road__stop">
+        <h3 data-i18n="road.s2">Appeler</h3>
+        <p data-i18n="road.t2">Un opérateur confirme les détails et la livraison.</p>
+      </div>
+      <div class="road__stop">
+        <h3 data-i18n="road.s3">Rouler</h3>
+        <p data-i18n="road.t3">Contrat clair, clés en main, la route est à vous.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="agency" id="agence">
+    <figure class="agency__fig">
+      <img src="assets/img/agence-q8.jpg" alt="Audi Q8 noir devant la vitrine de l'agence Marchica Car" loading="lazy" width="1200" height="1021">
+    </figure>
+    <div class="agency__txt">
+      <h2 class="h2 reveal" data-i18n="agency.title">Nador, Marrakech, Casablanca.</h2>
+      <p data-i18n="agency.p1">Marchica Luxury Cars est une agence de location de voitures de luxe présente à Nador, Marrakech et Casablanca. Notre expérience de la location et du tourisme, et une équipe qualifiée, vous garantissent un séjour sans souci au Maroc.</p>
+      <ul class="agency__list">
+        <li><i class="ph ph-airplane-landing"></i><span data-i18n="agency.l1">Livraison à l'aéroport de Nador et dans 15 points du pays</span></li>
+        <li><i class="ph ph-clock"></i><span data-i18n="agency.l2">Service 24 h/24, 7 j/7</span></li>
+        <li><i class="ph ph-calendar-plus"></i><span data-i18n="agency.l3">Offres spéciales pour les séjours de plus de 7 jours</span></li>
+      </ul>
+      <address>N° 3, Route Zegangan, Qu Isabanan, Rue 72, Nador</address>
+    </div>
+  </section>
+
+  <section class="reviews" id="avis">
+    <div class="reviews__score">
+      <p class="reviews__big">4,8</p>
+      <p class="reviews__lbl" data-i18n="rev.lbl">sur Google, 86 avis</p>
+    </div>
+    <div class="quote" id="quote">
+      <blockquote class="quote__txt" id="quoteTxt"></blockquote>
+      <p class="quote__who" id="quoteWho"></p>
+      <div class="quote__nav">
+        <button type="button" id="qPrev" aria-label="Avis précédent"><i class="ph ph-arrow-left"></i></button>
+        <span class="quote__count" id="qCount"></span>
+        <button type="button" id="qNext" aria-label="Avis suivant"><i class="ph ph-arrow-right"></i></button>
+      </div>
+      <p class="quote__note" data-i18n="rev.note">Avis Google, traduits.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__cta">
+    <p class="foot__big" data-i18n="foot.big">Les clés sont prêtes.</p>
+    <a class="btn btn--red" href="tel:+212661381639"><i class="ph ph-phone"></i>+212 661 38 16 39</a>
+  </div>
+  <div class="foot__cols">
+    <div>
+      <p class="brand brand--foot"><span class="brand__a">MARCHICA</span><span class="brand__b">CAR</span></p>
+      <p data-i18n="foot.open">Ouvert 24 h/24</p>
+    </div>
+    <div>
+      <p>N° 3, Route Zegangan, Qu Isabanan, Rue 72, Nador</p>
+      <p><a href="mailto:marchicaluxcar@gmail.com">marchicaluxcar@gmail.com</a></p>
+    </div>
+    <div class="foot__social">
+      <a href="https://www.instagram.com/marchica.car" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i>@marchica.car</a>
+      <a href="https://www.facebook.com/p/Marchica-car-100076625625287/" target="_blank" rel="noopener"><i class="ph ph-facebook-logo"></i>Facebook</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Marchica+car+Nador" target="_blank" rel="noopener"><i class="ph ph-map-pin"></i><span data-i18n="foot.map">Itinéraire</span></a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/212661381639" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
